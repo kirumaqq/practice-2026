@@ -1,0 +1,15 @@
+{{ define "main" }}
+<article class="page">
+  <div class="container">
+    <header class="page-header">
+      <span class="eyebrow">{{ with .Params.eyebrow }}{{ . }}{{ else }}КупиУмно{{ end }}</span>
+      <h1>{{ .Title }}</h1>
+      {{ if .Params.date }}<p class="post-meta">{{ .Date.Format "2 January 2006" }}</p>{{ end }}
+      {{ if .Params.back }}<a class="back-link" href="{{ .Params.back }}">← Назад</a>{{ end }}
+    </header>
+    <div class="prose">
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ end }}

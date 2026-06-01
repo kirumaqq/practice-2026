@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="page">
+  <div class="container">
+    <header class="page-header">
+      <span class="eyebrow">{{ with .Params.eyebrow }}{{ . }}{{ else }}КупиУмно{{ end }}</span>
+      <h1>{{ .Title }}</h1>
+    </header>
+    <div class="prose">
+      {{ .Content }}
+    </div>
+
+    {{ $posts := .Pages.ByDate.Reverse }}
+    {{ with $posts }}
+    <div class="journal-list">
+      {{ range . }}
+      <article class="journal-item">
+        {{ if .Date }}<span class="date">{{ .Date.Format "2 January 2006" }}</span>{{ end }}
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p>{{ with .Params.summary }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
+      </article>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
