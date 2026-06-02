@@ -1,4 +1,18 @@
+# Hugo build artifacts
 site/public/
 site/resources/_gen/
 site/.hugo_build.lock
 
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# LibreOffice lock file
+.~lock.*#
+# Word lock file
+reports/~$report.docx
