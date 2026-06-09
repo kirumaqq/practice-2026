@@ -1,3 +1,34 @@
 baseURL = '/'
 languageCode = 'ru-ru'
-title = 'КупиУмно — проект'
+title = 'КупиУмно — агрегатор лучших предложений'
+defaultContentLanguage = 'ru'
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  description = 'КупиУмно — цифровой помощник для онлайн-покупок: сравнение цен, история стоимости и умные уведомления.'
+  tagline = 'Покупай умно, не переплачивай'
+  email = 'umid1504@gmail.com'
+  repo = 'https://github.com/kirumaqq/practice-2026'
+
+[[menu.main]]
+  name = 'Главная'
+  pageRef = '/'
+  weight = 1
+[[menu.main]]
+  name = 'О проекте'
+  pageRef = '/about'
+  weight = 2
+[[menu.main]]
+  name = 'Участники'
+  pageRef = '/team'
+  weight = 3
+[[menu.main]]
+  name = 'Журнал'
+  pageRef = '/journal'
+  weight = 4
+[[menu.main]]
+  name = 'Ресурсы'
+  pageRef = '/resources'
+  weight = 5

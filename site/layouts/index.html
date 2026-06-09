@@ -1,4 +1,98 @@
 {{ define "main" }}
-  <h1>Hello, World 👋</h1>
-  <p>Сайт проекта «КупиУмно» — скоро здесь будет контент.</p>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <span class="eyebrow">Цифровой помощник для онлайн-покупок</span>
+      <h1>{{ .Site.Params.tagline }}</h1>
+      <p class="lead">«КупиУмно» собирает предложения маркетплейсов в одном экране,
+      показывает реальную историю цен и подсказывает, когда покупка действительно выгодна.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/about/">Узнать о проекте →</a>
+        <a class="btn btn-ghost" href="/journal/">Журнал работы</a>
+      </div>
+    </div>
+    <aside class="hero-card" aria-label="Пример сравнения цен">
+      <img src="/img/logo-kupiumno.png" alt="Логотип КупиУмно">
+      <div class="price-row">
+        <span class="shop">Магазин A</span>
+        <span><span class="new">38 990 ₽</span> <span class="tag-best">лучшая</span></span>
+      </div>
+      <div class="price-row">
+        <span class="shop">Магазин B</span>
+        <span><span class="old">41 500 ₽</span><span class="new">40 200 ₽</span></span>
+      </div>
+      <div class="price-row">
+        <span class="shop">Магазин C</span>
+        <span><span class="new">42 100 ₽</span> <span class="tag-fake">скидка ?</span></span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Что умеет платформа</span>
+      <h2>Один экран — всё решение о покупке</h2>
+      <p>Пользователь тратит 30–60 минут на сравнение товаров. «КупиУмно» сокращает
+      это время и снимает риск переплаты.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <span class="ico">🔍</span>
+        <h3>Поиск и сравнение</h3>
+        <p>Предложения разных магазинов на один товар — в едином интерфейсе.</p>
+      </div>
+      <div class="card">
+        <span class="ico">📉</span>
+        <h3>История цен</h3>
+        <p>Динамика стоимости за 30, 90 и 180 дней — видно реальную скидку.</p>
+      </div>
+      <div class="card">
+        <span class="ico">🔔</span>
+        <h3>Уведомления</h3>
+        <p>Сигналы о снижении цены, старте акции и появлении выгодного предложения.</p>
+      </div>
+      <div class="card">
+        <span class="ico">🤖</span>
+        <h3>AI-рекомендации</h3>
+        <p>Подсказка «купить сейчас или подождать» на основе динамики и сезонности.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Зачем это рынку</span>
+      <h2>Цифры, на которые мы опираемся</h2>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="num">70%</div><div class="lbl">онлайн-покупок в РФ проходит через маркетплейсы</div></div>
+      <div class="stat"><div class="num red">−50%</div><div class="lbl">цель по сокращению времени выбора товара</div></div>
+      <div class="stat"><div class="num">&gt;10 000</div><div class="lbl">установок — цель MVP за 6 месяцев</div></div>
+      <div class="stat"><div class="num">4–5 тыс.</div><div class="lbl">активных пользователей в месяц (MAU)</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Об учебном проекте</span>
+      <h2>Сайт практики</h2>
+      <p>Этот сайт создан в рамках учебной (проектной) практики студентов группы 253-331
+      Московского Политеха. Здесь — описание проекта «КупиУмно», вклад участников,
+      журнал работы и полезные ресурсы.</p>
+    </div>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="/about/">О проекте</a>
+      <a class="btn btn-ghost" href="/team/">Участники</a>
+      <a class="btn btn-ghost" href="/resources/">Ресурсы</a>
+    </div>
+  </div>
+</section>
+
 {{ end }}

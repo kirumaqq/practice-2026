@@ -1,0 +1,31 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <div class="brand brand--footer">
+        <img src="/img/logo-kupiumno.png" alt="Логотип КупиУмно" class="brand-logo">
+        <span class="brand-name">Купи<span class="accent">Умно</span></span>
+      </div>
+      <p class="footer-note">Учебный проект по дисциплине «Проектная деятельность».<br>
+      Агрегатор лучших предложений на рынке.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Разделы</h4>
+      <ul class="footer-links">
+        {{ range .Site.Menus.main }}<li><a href="{{ .URL }}">{{ .Name }}</a></li>{{ end }}
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Контакты</h4>
+      <ul class="footer-links">
+        <li><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></li>
+        <li><a href="{{ .Site.Params.repo }}" rel="noopener" target="_blank">Репозиторий проекта</a></li>
+      </ul>
+      <img src="/img/mospolytech.png" alt="Московский Политех" class="footer-uni">
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© {{ now.Year }} КупиУмно · группа 253-331 · Московский Политех</span>
+    </div>
+  </div>
+</footer>
