@@ -16,3 +16,4 @@ Thumbs.db
 .~lock.*#
 # Word lock file
 reports/~$report.docx
+reports/report.pdf:Zone.Identifier

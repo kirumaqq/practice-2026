@@ -3,6 +3,8 @@ languageCode = 'ru-ru'
 title = 'КупиУмно — агрегатор лучших предложений'
 defaultContentLanguage = 'ru'
 
+disableKinds = ['taxonomy', 'term']
+
 [markup.goldmark.renderer]
   unsafe = true
 
